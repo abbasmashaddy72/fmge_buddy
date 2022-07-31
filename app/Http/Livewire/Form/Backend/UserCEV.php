@@ -89,7 +89,7 @@ class UserCEV extends Component
                 'terms',
                 'privacy',
                 'career',
-                'user_list',
+                '   ',
                 'user_add',
                 'user_edit',
                 'user_view',

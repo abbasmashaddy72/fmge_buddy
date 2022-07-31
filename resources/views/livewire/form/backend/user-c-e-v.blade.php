@@ -16,7 +16,9 @@
 
         <x-form-input name="password" label="Password" type="password" />
 
-        <x-form-select name="role" label="Role Name" :options="['Admin' => 'Admin', 'Employee_FO' => 'Employee_FO', 'Employee_Web' => 'Employee_Web']" placeholder="Please Select" />
+        @if (auth()->user()->id != $user)
+            <x-form-select name="role" label="Role Name" :options="['Admin' => 'Admin', 'Employee' => 'Employee']" placeholder="Please Select" />
+        @endif
     @endwire
 
     <div class="mt-3">
