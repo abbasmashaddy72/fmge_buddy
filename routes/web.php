@@ -22,6 +22,14 @@ Route::get('/', function () {
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth', 'namespace' => 'App\Http\Controllers\Backend'], function () {
     Route::get('dashboard', 'DashboardController@index')->name('dashboard');
 
+    Route::get('user/permissions/{id}', 'UserController@permission_edit')->name('user.permissions.edit');
+
+    Route::post('user/permissions/{id}', 'UserController@permission_save')->name('user.permissions.save');
+
+    Route::resource('user', 'UserController')->only([
+        'index', 'create', 'store',  'edit', 'show'
+    ]);
+
     Route::get('homepage', 'HomePageController@index')->name('homepage');
 
     Route::resource('contact-us', 'ContactUsController')->only([

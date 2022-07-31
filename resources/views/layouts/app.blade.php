@@ -14,7 +14,6 @@
         [x-cloak] {
             display: none !important;
         }
-
     </style>
     @stack('styles')
     @livewireStyles
@@ -47,10 +46,10 @@
     </div>
 
     <!-- Scripts -->
-    @livewireScripts
-    @stack('scripts')
     <script src="{{ asset('js/backend/hope-ui.js') }}"></script>
     <script src="{{ asset('js/backend/app.js') }}"></script>
+    @livewireScripts
+    @stack('scripts')
 
     <!-- Browser Sync -->
     @if (getenv('APP_ENV') === 'local')

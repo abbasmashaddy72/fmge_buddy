@@ -30,3 +30,8 @@ mix.js('resources/js/backend/app.js', 'public/js/backend')
     })
 
 mix.browserSync('127.0.0.1:8000')
+mix.webpackConfig({
+    stats: {
+        children: true
+    }
+})
