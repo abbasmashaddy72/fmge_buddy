@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Frontend\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['middleware' => 'guest', 'namespace' => 'App\Http\Controllers\Frontend'], function () {
+    Route::get('', 'HomeController@index')->name('home');
+    Route::get('blogs', 'HomeController@blogs')->name('blogs');
+    Route::get('blog_detail', 'HomeController@blog_detail')->name('blog_detail');
+    Route::get('courses', 'HomeController@courses')->name('courses');
+    Route::get('course_detail', 'HomeController@course_detail')->name('course_detail');
+    Route::get('contact_us', 'HomeController@contact_us')->name('contact_us');
+    Route::get('faqs', 'HomeController@faqs')->name('faqs');
+    Route::get('about_us', 'HomeController@about_us')->name('about_us');
+    Route::get('gallery', 'HomeController@gallery')->name('gallery');
 });
 
 // 'index', 'create', 'store', 'show', 'edit', 'update', 'destroy'
