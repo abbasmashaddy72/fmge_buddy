@@ -9,14 +9,17 @@
                     <div class="grid grid-cols-12 gap-6 items-center">
                         <div class="col-span-6">
                             <div class="grid grid-cols-1 gap-6">
-                                <img src="assets/images/about/ab03.jpg" class="shadow rounded-md" alt="">
-                                <img src="assets/images/about/ab02.jpg" class="shadow rounded-md" alt="">
+                                <img src="{{ asset('assets/images/about/ab03.jpg') }}" class="shadow rounded-md"
+                                    alt="">
+                                <img src="{{ asset('assets/images/about/ab02.jpg') }}" class="shadow rounded-md"
+                                    alt="">
                             </div>
                         </div>
 
                         <div class="col-span-6">
                             <div class="grid grid-cols-1 gap-6">
-                                <img src="assets/images/about/ab01.jpg" class="shadow rounded-md" alt="">
+                                <img src="{{ asset('assets/images/about/ab01.jpg') }}" class="shadow rounded-md"
+                                    alt="">
                             </div>
                         </div>
                     </div>

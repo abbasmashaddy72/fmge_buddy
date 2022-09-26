@@ -9,15 +9,15 @@
                 <div
                     class="group relative rounded-md shadow hover:shadow-lg dark:shadow-gray-800 duration-500 ease-in-out overflow-hidden">
                     <div class="relative overflow-hidden">
-                        <img src="assets/images/course/c1.jpg" class="group-hover:scale-110 duration-500 ease-in-out"
-                            alt="">
+                        <img src="{{ asset('assets/images/course/c1.jpg') }}"
+                            class="group-hover:scale-110 duration-500 ease-in-out" alt="">
                         <div
                             class="absolute inset-0 bg-slate-900/50 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                         </div>
 
                         <div class="absolute left-0 bottom-0 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                             <div class="pb-4 pl-4 flex items-center">
-                                <img src="assets/images/client/01.jpg"
+                                <img src="{{ asset('assets/images/client/01.jpg') }}"
                                     class="h-12 w-12 rounded-full shadow-md dark:shadow-gray-800 mx-auto"
                                     alt="">
                                 <div class="ml-3">
@@ -71,8 +71,8 @@
                 <div
                     class="group relative rounded-md shadow hover:shadow-lg dark:shadow-gray-800 duration-500 ease-in-out overflow-hidden">
                     <div class="relative overflow-hidden">
-                        <img src="assets/images/course/c2.jpg" class="group-hover:scale-110 duration-500 ease-in-out"
-                            alt="">
+                        <img src="{{ asset('assets/images/course/c2.jpg') }}"
+                            class="group-hover:scale-110 duration-500 ease-in-out" alt="">
                         <div
                             class="absolute inset-0 bg-slate-900/50 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                         </div>
@@ -80,7 +80,7 @@
                         <div
                             class="absolute left-0 bottom-0 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                             <div class="pb-4 pl-4 flex items-center">
-                                <img src="assets/images/client/02.jpg"
+                                <img src="{{ asset('assets/images/client/02.jpg') }}"
                                     class="h-12 w-12 rounded-full shadow-md dark:shadow-gray-800 mx-auto"
                                     alt="">
                                 <div class="ml-3">
@@ -133,8 +133,8 @@
                 <div
                     class="group relative rounded-md shadow hover:shadow-lg dark:shadow-gray-800 duration-500 ease-in-out overflow-hidden">
                     <div class="relative overflow-hidden">
-                        <img src="assets/images/course/c3.jpg" class="group-hover:scale-110 duration-500 ease-in-out"
-                            alt="">
+                        <img src="{{ asset('assets/images/course/c3.jpg') }}"
+                            class="group-hover:scale-110 duration-500 ease-in-out" alt="">
                         <div
                             class="absolute inset-0 bg-slate-900/50 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                         </div>
@@ -142,7 +142,7 @@
                         <div
                             class="absolute left-0 bottom-0 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                             <div class="pb-4 pl-4 flex items-center">
-                                <img src="assets/images/client/03.jpg"
+                                <img src="{{ asset('assets/images/client/03.jpg') }}"
                                     class="h-12 w-12 rounded-full shadow-md dark:shadow-gray-800 mx-auto"
                                     alt="">
                                 <div class="ml-3">
@@ -154,7 +154,8 @@
                     </div>
 
                     <div class="content p-6 relative">
-                        <a href="{{ route('course_detail') }}" class="font-medium block text-indigo-600">Engineering</a>
+                        <a href="{{ route('course_detail') }}"
+                            class="font-medium block text-indigo-600">Engineering</a>
                         <a href="{{ route('course_detail') }}"
                             class="text-lg font-medium block hover:text-indigo-600 duration-500 ease-in-out mt-2">Microsoft
                             Excel - Excel from Beginner to Advanced</a>
@@ -195,8 +196,8 @@
                 <div
                     class="group relative rounded-md shadow hover:shadow-lg dark:shadow-gray-800 duration-500 ease-in-out overflow-hidden">
                     <div class="relative overflow-hidden">
-                        <img src="assets/images/course/c4.jpg" class="group-hover:scale-110 duration-500 ease-in-out"
-                            alt="">
+                        <img src="{{ asset('assets/images/course/c4.jpg') }}"
+                            class="group-hover:scale-110 duration-500 ease-in-out" alt="">
                         <div
                             class="absolute inset-0 bg-slate-900/50 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                         </div>
@@ -204,7 +205,7 @@
                         <div
                             class="absolute left-0 bottom-0 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                             <div class="pb-4 pl-4 flex items-center">
-                                <img src="assets/images/client/04.jpg"
+                                <img src="{{ asset('assets/images/client/04.jpg') }}"
                                     class="h-12 w-12 rounded-full shadow-md dark:shadow-gray-800 mx-auto"
                                     alt="">
                                 <div class="ml-3">
@@ -258,8 +259,8 @@
                 <div
                     class="group relative rounded-md shadow hover:shadow-lg dark:shadow-gray-800 duration-500 ease-in-out overflow-hidden">
                     <div class="relative overflow-hidden">
-                        <img src="assets/images/course/c5.jpg" class="group-hover:scale-110 duration-500 ease-in-out"
-                            alt="">
+                        <img src="{{ asset('assets/images/course/c5.jpg') }}"
+                            class="group-hover:scale-110 duration-500 ease-in-out" alt="">
                         <div
                             class="absolute inset-0 bg-slate-900/50 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                         </div>
@@ -267,7 +268,7 @@
                         <div
                             class="absolute left-0 bottom-0 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                             <div class="pb-4 pl-4 flex items-center">
-                                <img src="assets/images/client/05.jpg"
+                                <img src="{{ asset('assets/images/client/05.jpg') }}"
                                     class="h-12 w-12 rounded-full shadow-md dark:shadow-gray-800 mx-auto"
                                     alt="">
                                 <div class="ml-3">
@@ -321,8 +322,8 @@
                 <div
                     class="group relative rounded-md shadow hover:shadow-lg dark:shadow-gray-800 duration-500 ease-in-out overflow-hidden">
                     <div class="relative overflow-hidden">
-                        <img src="assets/images/course/c6.jpg" class="group-hover:scale-110 duration-500 ease-in-out"
-                            alt="">
+                        <img src="{{ asset('assets/images/course/c6.jpg') }}"
+                            class="group-hover:scale-110 duration-500 ease-in-out" alt="">
                         <div
                             class="absolute inset-0 bg-slate-900/50 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                         </div>
@@ -330,7 +331,7 @@
                         <div
                             class="absolute left-0 bottom-0 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                             <div class="pb-4 pl-4 flex items-center">
-                                <img src="assets/images/client/06.jpg"
+                                <img src="{{ asset('assets/images/client/06.jpg') }}"
                                     class="h-12 w-12 rounded-full shadow-md dark:shadow-gray-800 mx-auto"
                                     alt="">
                                 <div class="ml-3">
@@ -384,8 +385,8 @@
                 <div
                     class="group relative rounded-md shadow hover:shadow-lg dark:shadow-gray-800 duration-500 ease-in-out overflow-hidden">
                     <div class="relative overflow-hidden">
-                        <img src="assets/images/course/c7.jpg" class="group-hover:scale-110 duration-500 ease-in-out"
-                            alt="">
+                        <img src="{{ asset('assets/images/course/c7.jpg') }}"
+                            class="group-hover:scale-110 duration-500 ease-in-out" alt="">
                         <div
                             class="absolute inset-0 bg-slate-900/50 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                         </div>
@@ -393,7 +394,7 @@
                         <div
                             class="absolute left-0 bottom-0 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                             <div class="pb-4 pl-4 flex items-center">
-                                <img src="assets/images/client/02.jpg"
+                                <img src="{{ asset('assets/images/client/02.jpg') }}"
                                     class="h-12 w-12 rounded-full shadow-md dark:shadow-gray-800 mx-auto"
                                     alt="">
                                 <div class="ml-3">
@@ -447,8 +448,8 @@
                 <div
                     class="group relative rounded-md shadow hover:shadow-lg dark:shadow-gray-800 duration-500 ease-in-out overflow-hidden">
                     <div class="relative overflow-hidden">
-                        <img src="assets/images/course/c8.jpg" class="group-hover:scale-110 duration-500 ease-in-out"
-                            alt="">
+                        <img src="{{ asset('assets/images/course/c8.jpg') }}"
+                            class="group-hover:scale-110 duration-500 ease-in-out" alt="">
                         <div
                             class="absolute inset-0 bg-slate-900/50 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                         </div>
@@ -456,7 +457,7 @@
                         <div
                             class="absolute left-0 bottom-0 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                             <div class="pb-4 pl-4 flex items-center">
-                                <img src="assets/images/client/03.jpg"
+                                <img src="{{ asset('assets/images/client/03.jpg') }}"
                                     class="h-12 w-12 rounded-full shadow-md dark:shadow-gray-800 mx-auto"
                                     alt="">
                                 <div class="ml-3">
@@ -510,8 +511,8 @@
                 <div
                     class="group relative rounded-md shadow hover:shadow-lg dark:shadow-gray-800 duration-500 ease-in-out overflow-hidden">
                     <div class="relative overflow-hidden">
-                        <img src="assets/images/course/c9.jpg" class="group-hover:scale-110 duration-500 ease-in-out"
-                            alt="">
+                        <img src="{{ asset('assets/images/course/c9.jpg') }}"
+                            class="group-hover:scale-110 duration-500 ease-in-out" alt="">
                         <div
                             class="absolute inset-0 bg-slate-900/50 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                         </div>
@@ -519,7 +520,7 @@
                         <div
                             class="absolute left-0 bottom-0 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                             <div class="pb-4 pl-4 flex items-center">
-                                <img src="assets/images/client/04.jpg"
+                                <img src="{{ asset('assets/images/client/04.jpg') }}"
                                     class="h-12 w-12 rounded-full shadow-md dark:shadow-gray-800 mx-auto"
                                     alt="">
                                 <div class="ml-3">
@@ -573,8 +574,8 @@
                 <div
                     class="group relative rounded-md shadow hover:shadow-lg dark:shadow-gray-800 duration-500 ease-in-out overflow-hidden">
                     <div class="relative overflow-hidden">
-                        <img src="assets/images/course/c10.jpg" class="group-hover:scale-110 duration-500 ease-in-out"
-                            alt="">
+                        <img src="{{ asset('assets/images/course/c10.jpg') }}"
+                            class="group-hover:scale-110 duration-500 ease-in-out" alt="">
                         <div
                             class="absolute inset-0 bg-slate-900/50 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                         </div>
@@ -582,7 +583,7 @@
                         <div
                             class="absolute left-0 bottom-0 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                             <div class="pb-4 pl-4 flex items-center">
-                                <img src="assets/images/client/05.jpg"
+                                <img src="{{ asset('assets/images/client/05.jpg') }}"
                                     class="h-12 w-12 rounded-full shadow-md dark:shadow-gray-800 mx-auto"
                                     alt="">
                                 <div class="ml-3">

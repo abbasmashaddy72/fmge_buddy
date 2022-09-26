@@ -31,10 +31,11 @@
                     <div
                         class="group relative block overflow-hidden rounded-md transition-all duration-700 ease-in-out">
                         <div class="relative bg-indigo-600 overflow-hidden rounded-md">
-                            <a href="assets/images/portfolio/1.jpg"
+                            <a href="{{ asset('assets/images/portfolio/1.jpg') }}"
                                 class="lightbox transition-all duration-700 ease-in-out group-hover:p-[10px]"
                                 title="">
-                                <img src="assets/images/portfolio/1.jpg" class="rounded-md" alt="">
+                                <img src="{{ asset('assets/images/portfolio/1.jpg') }}" class="rounded-md"
+                                    alt="">
                             </a>
                         </div>
                         <div class="content transition-all duration-700 ease-in-out">
@@ -53,10 +54,11 @@
                     <div
                         class="group relative block overflow-hidden rounded-md transition-all duration-700 ease-in-out">
                         <div class="relative bg-indigo-600 overflow-hidden rounded-md">
-                            <a href="assets/images/portfolio/2.jpg"
+                            <a href="{{ asset('assets/images/portfolio/2.jpg') }}"
                                 class="lightbox transition-all duration-700 ease-in-out group-hover:p-[10px]"
                                 title="">
-                                <img src="assets/images/portfolio/2.jpg" class="rounded-md" alt="">
+                                <img src="{{ asset('assets/images/portfolio/2.jpg') }}" class="rounded-md"
+                                    alt="">
                             </a>
                         </div>
                         <div class="content transition-all duration-700 ease-in-out">
@@ -75,10 +77,11 @@
                     <div
                         class="group relative block overflow-hidden rounded-md transition-all duration-700 ease-in-out">
                         <div class="relative bg-indigo-600 overflow-hidden rounded-md">
-                            <a href="assets/images/portfolio/3.jpg"
+                            <a href="{{ asset('assets/images/portfolio/3.jpg') }}"
                                 class="lightbox transition-all duration-700 ease-in-out group-hover:p-[10px]"
                                 title="">
-                                <img src="assets/images/portfolio/3.jpg" class="rounded-md" alt="">
+                                <img src="{{ asset('assets/images/portfolio/3.jpg') }}" class="rounded-md"
+                                    alt="">
                             </a>
                         </div>
                         <div class="content transition-all duration-700 ease-in-out">
@@ -97,10 +100,11 @@
                     <div
                         class="group relative block overflow-hidden rounded-md transition-all duration-700 ease-in-out">
                         <div class="relative bg-indigo-600 overflow-hidden rounded-md">
-                            <a href="assets/images/portfolio/4.jpg"
+                            <a href="{{ asset('assets/images/portfolio/4.jpg') }}"
                                 class="lightbox transition-all duration-700 ease-in-out group-hover:p-[10px]"
                                 title="">
-                                <img src="assets/images/portfolio/4.jpg" class="rounded-md" alt="">
+                                <img src="{{ asset('assets/images/portfolio/4.jpg') }}" class="rounded-md"
+                                    alt="">
                             </a>
                         </div>
                         <div class="content transition-all duration-700 ease-in-out">
@@ -119,10 +123,11 @@
                     <div
                         class="group relative block overflow-hidden rounded-md transition-all duration-700 ease-in-out">
                         <div class="relative bg-indigo-600 overflow-hidden rounded-md">
-                            <a href="assets/images/portfolio/5.jpg"
+                            <a href="{{ asset('assets/images/portfolio/5.jpg') }}"
                                 class="lightbox transition-all duration-700 ease-in-out group-hover:p-[10px]"
                                 title="">
-                                <img src="assets/images/portfolio/5.jpg" class="rounded-md" alt="">
+                                <img src="{{ asset('assets/images/portfolio/5.jpg') }}" class="rounded-md"
+                                    alt="">
                             </a>
                         </div>
                         <div class="content transition-all duration-700 ease-in-out">
@@ -141,10 +146,11 @@
                     <div
                         class="group relative block overflow-hidden rounded-md transition-all duration-700 ease-in-out">
                         <div class="relative bg-indigo-600 overflow-hidden rounded-md">
-                            <a href="assets/images/portfolio/6.jpg"
+                            <a href="{{ asset('assets/images/portfolio/6.jpg') }}"
                                 class="lightbox transition-all duration-700 ease-in-out group-hover:p-[10px]"
                                 title="">
-                                <img src="assets/images/portfolio/6.jpg" class="rounded-md" alt="">
+                                <img src="{{ asset('assets/images/portfolio/6.jpg') }}" class="rounded-md"
+                                    alt="">
                             </a>
                         </div>
                         <div class="content transition-all duration-700 ease-in-out">
@@ -163,10 +169,11 @@
                     <div
                         class="group relative block overflow-hidden rounded-md transition-all duration-700 ease-in-out">
                         <div class="relative bg-indigo-600 overflow-hidden rounded-md">
-                            <a href="assets/images/portfolio/7.jpg"
+                            <a href="{{ asset('assets/images/portfolio/7.jpg') }}"
                                 class="lightbox transition-all duration-700 ease-in-out group-hover:p-[10px]"
                                 title="">
-                                <img src="assets/images/portfolio/7.jpg" class="rounded-md" alt="">
+                                <img src="{{ asset('assets/images/portfolio/7.jpg') }}" class="rounded-md"
+                                    alt="">
                             </a>
                         </div>
                         <div class="content transition-all duration-700 ease-in-out">
@@ -185,10 +192,11 @@
                     <div
                         class="group relative block overflow-hidden rounded-md transition-all duration-700 ease-in-out">
                         <div class="relative bg-indigo-600 overflow-hidden rounded-md">
-                            <a href="assets/images/portfolio/8.jpg"
+                            <a href="{{ asset('assets/images/portfolio/8.jpg') }}"
                                 class="lightbox transition-all duration-700 ease-in-out group-hover:p-[10px]"
                                 title="">
-                                <img src="assets/images/portfolio/8.jpg" class="rounded-md" alt="">
+                                <img src="{{ asset('assets/images/portfolio/8.jpg') }}" class="rounded-md"
+                                    alt="">
                             </a>
                         </div>
                         <div class="content transition-all duration-700 ease-in-out">
@@ -207,10 +215,11 @@
                     <div
                         class="group relative block overflow-hidden rounded-md transition-all duration-700 ease-in-out">
                         <div class="relative bg-indigo-600 overflow-hidden rounded-md">
-                            <a href="assets/images/portfolio/23.jpg"
+                            <a href="{{ asset('assets/images/portfolio/23.jpg') }}"
                                 class="lightbox transition-all duration-700 ease-in-out group-hover:p-[10px]"
                                 title="">
-                                <img src="assets/images/portfolio/23.jpg" class="rounded-md" alt="">
+                                <img src="{{ asset('assets/images/portfolio/23.jpg') }}" class="rounded-md"
+                                    alt="">
                             </a>
                         </div>
                         <div class="content transition-all duration-700 ease-in-out">
@@ -229,10 +238,11 @@
                     <div
                         class="group relative block overflow-hidden rounded-md transition-all duration-700 ease-in-out">
                         <div class="relative bg-indigo-600 overflow-hidden rounded-md">
-                            <a href="assets/images/portfolio/20.jpg"
+                            <a href="{{ asset('assets/images/portfolio/20.jpg') }}"
                                 class="lightbox transition-all duration-700 ease-in-out group-hover:p-[10px]"
                                 title="">
-                                <img src="assets/images/portfolio/20.jpg" class="rounded-md" alt="">
+                                <img src="{{ asset('assets/images/portfolio/20.jpg') }}" class="rounded-md"
+                                    alt="">
                             </a>
                         </div>
                         <div class="content transition-all duration-700 ease-in-out">
@@ -251,10 +261,11 @@
                     <div
                         class="group relative block overflow-hidden rounded-md transition-all duration-700 ease-in-out">
                         <div class="relative bg-indigo-600 overflow-hidden rounded-md">
-                            <a href="assets/images/portfolio/21.jpg"
+                            <a href="{{ asset('assets/images/portfolio/21.jpg') }}"
                                 class="lightbox transition-all duration-700 ease-in-out group-hover:p-[10px]"
                                 title="">
-                                <img src="assets/images/portfolio/21.jpg" class="rounded-md" alt="">
+                                <img src="{{ asset('assets/images/portfolio/21.jpg') }}" class="rounded-md"
+                                    alt="">
                             </a>
                         </div>
                         <div class="content transition-all duration-700 ease-in-out">
@@ -273,10 +284,11 @@
                     <div
                         class="group relative block overflow-hidden rounded-md transition-all duration-700 ease-in-out">
                         <div class="relative bg-indigo-600 overflow-hidden rounded-md">
-                            <a href="assets/images/portfolio/22.jpg"
+                            <a href="{{ asset('assets/images/portfolio/22.jpg') }}"
                                 class="lightbox transition-all duration-700 ease-in-out group-hover:p-[10px]"
                                 title="">
-                                <img src="assets/images/portfolio/22.jpg" class="rounded-md" alt="">
+                                <img src="{{ asset('assets/images/portfolio/22.jpg') }}" class="rounded-md"
+                                    alt="">
                             </a>
                         </div>
                         <div class="content transition-all duration-700 ease-in-out">
@@ -339,7 +351,7 @@
     <!--end section-->
     <!-- End Section-->
     @push('scripts')
-        <script src="assets/libs/shufflejs/shuffle.min.js"></script>
-        <script src="assets/libs/tobii/js/tobii.min.js"></script>
+        <script src="{{ asset('assets/libs/shufflejs/shuffle.min.js') }}"></script>
+        <script src="{{ asset('assets/libs/tobii/js/tobii.min.js') }}"></script>
     @endpush
 </x-guest-layout>

@@ -10,8 +10,8 @@
                 <h3 class="mt-3 text-3xl leading-normal font-medium text-white">Become a Professional Graphic Designer
                 </h3>
                 <div class="flex items-center mx-auto mt-3">
-                    <img src="assets/images/client/01.jpg" class="h-10 w-10 rounded-full shadow-md dark:shadow-gray-800"
-                        alt="">
+                    <img src="{{ asset('assets/images/client/01.jpg') }}"
+                        class="h-10 w-10 rounded-full shadow-md dark:shadow-gray-800" alt="">
                     <a href="" class="font-semibold text-white block ml-3">Calvin Carlo</a>
                 </div>
             </div>
@@ -94,10 +94,10 @@
             <!--end grid-->
 
             <div class="grid md:grid-cols-2 grid-cols-1 mt-6 gap-[30px]">
-                <img src="assets/images/course/c3.jpg" class="rounded-md shadow" alt="">
+                <img src="{{ asset('assets/images/course/c3.jpg') }}" class="rounded-md shadow" alt="">
 
                 <div class="relative">
-                    <img src="assets/images/course/c8.jpg" class="rounded-md shadow" alt="">
+                    <img src="{{ asset('assets/images/course/c8.jpg') }}" class="rounded-md shadow" alt="">
 
                     <div class="absolute bottom-2/4 translate-y-2/4 right-0 left-0 text-center">
                         <a href="#!" data-type="youtube" data-id="yba7hPeTSjk"

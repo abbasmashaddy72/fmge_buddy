@@ -16,8 +16,8 @@
                         <p class="text-slate-400 mt-3">General Enquires & Queries</p>
 
                         <div class="mt-5">
-                            <a href="tel:+152534-468-854"
-                                class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">+91-804-203-054</a>
+                            <a href="tel:+91-8042-053-054"
+                                class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">+91-8042-053-054</a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
         <div class="container md:mt-24 mt-16">
             <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
                 <div class="lg:col-span-7 md:col-span-6">
-                    <img src="assets/images/contact.svg" alt="">
+                    <img src="{{ asset('assets/images/contact.svg') }}" alt="">
                 </div>
 
                 <div class="lg:col-span-5 md:col-span-6 mt-8 md:mt-0">

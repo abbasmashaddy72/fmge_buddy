@@ -91,7 +91,7 @@
 
             <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center mt-10 gap-[30px]">
                 <div class="lg:col-span-5">
-                    <img src="assets/images/illustrator/SEO_SVG.svg" alt="" />
+                    <img src="{{ asset('assets/images/illustrator/SEO_SVG.svg') }}" alt="" />
                 </div>
                 <div class="lg:col-span-7 mt-8 md:mt-0">
                     <div class="lg:ml-10">
@@ -131,68 +131,53 @@
 
         <div class="container md:mt-24 mt-16">
             <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center mt-10 gap-[30px]">
-                <div class="lg:col-span-5 md:order-2 order-1">
+                <div class="lg:col-span-7 mt-8 md:mt-0">
                     <div class="lg:ml-10">
-                        <div class="bg-white dark:bg-slate-900 p-6 rounded-md shadow dark:shadow-gray-800">
-                            <img src="assets/images/illustrator/Mobile_notification_SVG.svg" alt="" />
-
-                            <div class="mt-8">
-                                <form>
-                                    <div class="grid grid-cols-1">
-                                        <div class="mb-5">
-                                            <label class="form-label font-medium">Your Name :
-                                                <span class="text-red-600">*</span></label>
-                                            <div class="form-icon relative mt-2">
-                                                <i data-feather="user" class="w-4 h-4 absolute top-3 left-4"></i>
-                                                <input type="text" class="form-input pl-12" placeholder="Name"
-                                                    name="name" required="" />
-                                            </div>
-                                        </div>
-
-                                        <div class="mb-5">
-                                            <label class="form-label font-medium">Your Email :
-                                                <span class="text-red-600">*</span></label>
-                                            <div class="form-icon relative mt-2">
-                                                <i data-feather="mail" class="w-4 h-4 absolute top-3 left-4"></i>
-                                                <input type="email" class="form-input pl-12" placeholder="Email"
-                                                    name="email" required="" />
-                                            </div>
-                                        </div>
-
-                                        <div class="">
-                                            <button
-                                                class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md w-full">
-                                                Start Test
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                        <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
+                            Why Choose Us?
+                        </h3>
+                        <ul class="list-none text-slate-500 mt-4">
+                            <li class="mb-1 flex">
+                                <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
+                                Dedicated, Highly qualified & Experienced Faculty Members
+                            </li>
+                            <li class="mb-1 flex">
+                                <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
+                                Our faculty walks the extra mile to ensure that you clear the FMGE
+                            </li>
+                            <li class="mb-1 flex">
+                                <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
+                                Comprehensively Study Material by Subject Matter Experts
+                            </li>
+                            <li class="mb-1 flex">
+                                <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
+                                Integrated Teaching Approach
+                            </li>
+                            <li class="mb-1 flex">
+                                <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
+                                Well Qualified Faculty
+                            </li>
+                            <li class="mb-1 flex">
+                                <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
+                                Doubt Clearance Sessions
+                            </li>
+                            <li class="mb-1 flex">
+                                <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
+                                Tests and Assignments
+                            </li>
+                            <li class="mb-1 flex">
+                                <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
+                                Motivational Sessions
+                            </li>
+                            <li class="mb-1 flex">
+                                <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
+                                Digital Learning Programs
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="lg:col-span-7 md:order-1 order-2 mt-8 md:mt-0">
-                    <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
-                        <span class="text-indigo-600">Mock Test</span>
-                    </h3>
-                    <p class="text-slate-500 max-w-xl">
-                        300 Q’s · 300 marks 300 mins
-                    </p>
-
-                    <ul class="list-none text-slate-500 mt-4">
-                        <li class="mb-1 flex">
-                            <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
-                            Digital Marketing Solutions for Tomorrow
-                        </li>
-                        <li class="mb-1 flex">
-                            <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
-                            Our Talented & Experienced Marketing Agency
-                        </li>
-                        <li class="mb-1 flex">
-                            <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
-                            Create your own skin to match your brand
-                        </li>
-                    </ul>
+                <div class="lg:col-span-5">
+                    <img src="{{ asset('assets/images/illustrator/SEO_SVG.svg') }}" alt="" />
                 </div>
             </div>
             <!--end grid-->
@@ -357,34 +342,27 @@
                         </h3>
 
                         <p class="text-slate-500 max-w-xl mx-auto">
-                            Start working with Tailwind CSS that can provide everything you
-                            need to generate awareness, drive traffic, connect.
+                            For more details, Please Call on <a href="tel:+91-8042-053-054"
+                                class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">+91-8042-053-054</a><br>
+                            or E-Mail at <a href="mailto:fmgebuddy@gmail.com"
+                                class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">fmgebuddy@gmail.com</a>
                         </p>
-
-                        <div class="mt-6">
-                            <a href="page-pricing.html"
-                                class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mr-2 mt-2"><i
-                                    class="uil uil-master-card"></i> Subscribe Now</a>
-                        </div>
                     </div>
                 </div>
                 <!--end col-->
 
-                <div class="lg:col-span-7 mt-8 lg:mt-0">
+                <div class="lg:col-span-7
+                                mt-8 lg:mt-0">
                     <div class="lg:ml-8">
                         <div class="grid md:grid-cols-2 grid-cols-1 md:gap-0 gap-[30px]">
                             <div
                                 class="group border-b-[3px] dark:border-gray-700 relative shadow dark:shadow-gray-800 rounded-md md:scale-110 z-3 bg-white dark:bg-slate-900">
                                 <div class="p-6 py-8">
                                     <h6 class="font-bold uppercase mb-5 text-indigo-600">
-                                        Starter
+                                        Rapid Revision
                                     </h6>
 
-                                    <div class="flex mb-5">
-                                        <span class="text-xl font-semibold">$</span>
-                                        <span class="price text-4xl font-semibold mb-0">39</span>
-                                        <span class="text-xl font-semibold self-end mb-1">/mo</span>
-                                    </div>
+                                    <p class="flex mb-5 text-xl font-semibold">From December {{ date('Y') }}</p>
 
                                     <ul class="list-none text-slate-500">
                                         <li class="mb-1 flex">
@@ -414,14 +392,11 @@
                                 class="group border-b-[3px] dark:border-gray-700 relative shadow dark:shadow-gray-800 rounded-md z-2 bg-gray-50 dark:bg-slate-800">
                                 <div class="p-6 py-8 md:pl-10">
                                     <h6 class="font-bold uppercase mb-5 text-indigo-600">
-                                        Professional
+                                        Regular 6 Months
                                     </h6>
 
-                                    <div class="flex mb-5">
-                                        <span class="text-xl font-semibold">$</span>
-                                        <span class="price text-4xl font-semibold mb-0">59</span>
-                                        <span class="text-xl font-semibold self-end mb-1">/mo</span>
-                                    </div>
+                                    <p class="flex mb-5 text-xl font-semibold">From January {{ date('Y') + 1 }}</p>
+
 
                                     <ul class="list-none text-slate-500">
                                         <li class="mb-1 flex">
