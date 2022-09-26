@@ -3,13 +3,16 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Faq;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view('pages.frontend.index');
+        $faqs = Faq::get()->take(4);
+
+        return view('pages.frontend.index', compact('faqs'));
     }
 
     public function blogs()
@@ -39,7 +42,9 @@ class HomeController extends Controller
 
     public function faqs()
     {
-        return view('pages.frontend.faqs');
+        $faqs = Faq::get()->take(4);
+
+        return view('pages.frontend.faqs', compact('faqs'));
     }
 
     public function about_us()

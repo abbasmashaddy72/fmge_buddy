@@ -9,9 +9,12 @@
                             class="font-semibold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white">
                             What We Do?
                         </h4>
-                        <p class="text-slate-400 text-lg max-w-xl">
-                            Launch your campaign and benefit from our expertise on designing
-                            and managing conversion centered Tailwind CSS v3.x html page.
+                        <p class="text-slate-500 text-lg max-w-xl">
+                            Coaching for FMGE examination
+                        <div class="mt-4 font-semibold">
+                            TURNING TODAY’S STUDENTS INTO TOMORROW’S MEDICAL LEADERS
+                            <div class="text-right">- FMGE Buddy.</div>
+                        </div>
                         </p>
 
                         <div class="mt-6">
@@ -78,9 +81,10 @@
                     How We Work ?
                 </h3>
 
-                <p class="text-slate-400 max-w-xl mx-auto">
-                    Start working with Tailwind CSS that can provide everything you need
-                    to generate awareness, drive traffic, connect.
+                <p class="text-slate-500 max-w-xl mx-auto">
+                    We believes in nurturing medical students with compassion, care and professionalism to turn them
+                    into successful healthcare leaders. We strive hard to inculcate the virtues of understanding,
+                    empathy and love in our students who shall be leading the medical sphere in the future.
                 </p>
             </div>
             <!--end grid-->
@@ -92,35 +96,32 @@
                 <div class="lg:col-span-7 mt-8 md:mt-0">
                     <div class="lg:ml-10">
                         <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
-                            Change the way you build websites
+                            How We Do?
                         </h3>
-                        <p class="text-slate-400 max-w-xl">
-                            You can combine all the Techwind templates into a single one,
-                            you can take a component from the Application theme and use it
-                            in the Website.
+                        <p class="text-slate-500 max-w-xl">
+                            Our institute prepares our students with comprehensive medical knowledge, advanced
+                            methodology
                         </p>
 
-                        <ul class="list-none text-slate-400 mt-4">
+                        <ul class="list-none text-slate-500 mt-4">
+                            Vision
                             <li class="mb-1 flex">
                                 <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
-                                Digital Marketing Solutions for Tomorrow
+                                To impart academic excellence in Medical Education and serve the society with quality
+                                and affordable health care.
                             </li>
+                            Mission
                             <li class="mb-1 flex">
                                 <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
-                                Our Talented & Experienced Marketing Agency
+                                To provide excellent medical education to students with a mix of traditional and
+                                advanced methodology.
                             </li>
+                            Our Goal
                             <li class="mb-1 flex">
                                 <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
-                                Create your own skin to match your brand
+                                To provide high-quality medical education.
                             </li>
                         </ul>
-
-                        <div class="mt-4">
-                            <a href="page-aboutus.html"
-                                class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Find
-                                Out More
-                                <i class="uil uil-angle-right-b align-middle"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -174,11 +175,11 @@
                     <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
                         <span class="text-indigo-600">Mock Test</span>
                     </h3>
-                    <p class="text-slate-400 max-w-xl">
+                    <p class="text-slate-500 max-w-xl">
                         300 Q’s · 300 marks 300 mins
                     </p>
 
-                    <ul class="list-none text-slate-400 mt-4">
+                    <ul class="list-none text-slate-500 mt-4">
                         <li class="mb-1 flex">
                             <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
                             Digital Marketing Solutions for Tomorrow
@@ -212,7 +213,7 @@
                     Our Experts Team
                 </h3>
 
-                <p class="text-slate-400 max-w-xl mx-auto">
+                <p class="text-slate-500 max-w-xl mx-auto">
                     Start working with Tailwind CSS that can provide everything you need
                     to generate awareness, drive traffic, connect.
                 </p>
@@ -228,14 +229,14 @@
                                 src="{{ asset('assets/images/client/01.jpg') }}" alt="" width="384"
                                 height="512" />
                             <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
-                                <p class="text-base text-slate-400">
+                                <p class="text-base text-slate-500">
                                     " It seems that only fragments of the original text remain
                                     in the Lorem Ipsum texts used today. "
                                 </p>
 
                                 <div>
                                     <span class="text-indigo-600 block mb-1">Thomas Israel</span>
-                                    <span class="text-slate-400 text-sm dark:text-white/60 block">Staff Engineer,
+                                    <span class="text-slate-500 text-sm dark:text-white/60 block">Staff Engineer,
                                         Algolia</span>
                                 </div>
                             </div>
@@ -248,14 +249,14 @@
                                 src="{{ asset('assets/images/client/02.jpg') }}" alt="" width="384"
                                 height="512" />
                             <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
-                                <p class="text-base text-slate-400">
+                                <p class="text-base text-slate-500">
                                     " The most well-known dummy text is the 'Lorem Ipsum', which
                                     is said to have originated in the 16th century. "
                                 </p>
 
                                 <div>
                                     <span class="text-indigo-600 block mb-1">Carl Oliver</span>
-                                    <span class="text-slate-400 text-sm dark:text-white/60 block">Staff Engineer,
+                                    <span class="text-slate-500 text-sm dark:text-white/60 block">Staff Engineer,
                                         Algolia</span>
                                 </div>
                             </div>
@@ -268,14 +269,14 @@
                                 src="{{ asset('assets/images/client/03.jpg') }}" alt="" width="384"
                                 height="512" />
                             <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
-                                <p class="text-base text-slate-400">
+                                <p class="text-base text-slate-500">
                                     " One disadvantage of Lorum Ipsum is that in Latin certain
                                     letters appear more frequently than others. "
                                 </p>
 
                                 <div>
                                     <span class="text-indigo-600 block mb-1">Barbara McIntosh</span>
-                                    <span class="text-slate-400 text-sm dark:text-white/60 block">Staff Engineer,
+                                    <span class="text-slate-500 text-sm dark:text-white/60 block">Staff Engineer,
                                         Algolia</span>
                                 </div>
                             </div>
@@ -288,14 +289,14 @@
                                 src="{{ asset('assets/images/client/04.jpg') }}" alt="" width="384"
                                 height="512" />
                             <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
-                                <p class="text-base text-slate-400">
+                                <p class="text-base text-slate-500">
                                     " Thus, Lorem Ipsum has only limited suitability as a visual
                                     filler for German texts. "
                                 </p>
 
                                 <div>
                                     <span class="text-indigo-600 block mb-1">Jill Webb</span>
-                                    <span class="text-slate-400 text-sm dark:text-white/60 block">Staff Engineer,
+                                    <span class="text-slate-500 text-sm dark:text-white/60 block">Staff Engineer,
                                         Algolia</span>
                                 </div>
                             </div>
@@ -308,14 +309,14 @@
                                 src="{{ asset('assets/images/client/05.jpg') }}" alt="" width="384"
                                 height="512" />
                             <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
-                                <p class="text-base text-slate-400">
+                                <p class="text-base text-slate-500">
                                     " One disadvantage of Lorum Ipsum is that in Latin certain
                                     letters appear more frequently than others. "
                                 </p>
 
                                 <div>
                                     <span class="text-indigo-600 block mb-1">Barbara McIntosh</span>
-                                    <span class="text-slate-400 text-sm dark:text-white/60 block">Staff Engineer,
+                                    <span class="text-slate-500 text-sm dark:text-white/60 block">Staff Engineer,
                                         Algolia</span>
                                 </div>
                             </div>
@@ -328,14 +329,14 @@
                                 src="{{ asset('assets/images/client/06.jpg') }}" alt="" width="384"
                                 height="512" />
                             <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
-                                <p class="text-base text-slate-400">
+                                <p class="text-base text-slate-500">
                                     " Thus, Lorem Ipsum has only limited suitability as a visual
                                     filler for German texts. "
                                 </p>
 
                                 <div>
                                     <span class="text-indigo-600 block mb-1">Jill Webb</span>
-                                    <span class="text-slate-400 text-sm dark:text-white/60 block">Staff Engineer,
+                                    <span class="text-slate-500 text-sm dark:text-white/60 block">Staff Engineer,
                                         Algolia</span>
                                 </div>
                             </div>
@@ -355,7 +356,7 @@
                             Our Course Prices
                         </h3>
 
-                        <p class="text-slate-400 max-w-xl mx-auto">
+                        <p class="text-slate-500 max-w-xl mx-auto">
                             Start working with Tailwind CSS that can provide everything you
                             need to generate awareness, drive traffic, connect.
                         </p>
@@ -385,7 +386,7 @@
                                         <span class="text-xl font-semibold self-end mb-1">/mo</span>
                                     </div>
 
-                                    <ul class="list-none text-slate-400">
+                                    <ul class="list-none text-slate-500">
                                         <li class="mb-1 flex">
                                             <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
                                             Full Access
@@ -422,7 +423,7 @@
                                         <span class="text-xl font-semibold self-end mb-1">/mo</span>
                                     </div>
 
-                                    <ul class="list-none text-slate-400">
+                                    <ul class="list-none text-slate-500">
                                         <li class="mb-1 flex">
                                             <i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>
                                             Full Access
@@ -469,63 +470,21 @@
     <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
         <div class="container">
             <div class="grid md:grid-cols-2 grid-cols-1 gap-[30px]">
-                <div class="flex">
-                    <i data-feather="help-circle" class="fea icon-ex-md text-indigo-600 mr-3"></i>
-                    <div class="flex-1">
-                        <h5 class="mb-2 text-xl font-semibold">
-                            What is FMGE?
-                        </h5>
-                        <p class="text-slate-400">
-                            Due to its widespread use as filler text for layouts,
-                            non-readability is of great importance: human perception is
-                            tuned to recognize certain patterns and repetitions in texts.
-                        </p>
-                    </div>
-                </div>
 
-                <div class="flex">
-                    <i data-feather="help-circle" class="fea icon-ex-md text-indigo-600 mr-3"></i>
-                    <div class="flex-1">
-                        <h5 class="mb-2 text-xl font-semibold">
-                            What is the main process open account ?
-                        </h5>
-                        <p class="text-slate-400">
-                            If the distribution of letters and 'words' is random, the reader
-                            will not be distracted from making a neutral judgement on the
-                            visual impact
-                        </p>
+                @foreach ($faqs as $item)
+                    <div class="flex">
+                        <i data-feather="help-circle" class="fea icon-ex-md text-indigo-600 mr-3"></i>
+                        <div class="flex-1">
+                            <h5 class="mb-2 text-xl font-semibold">
+                                {{ $item->question }}
+                            </h5>
+                            <p class="text-slate-500 whitespace-pre-line">
+                                {{ $item->answer }}
+                            </p>
+                        </div>
                     </div>
-                </div>
+                @endforeach
 
-                <div class="flex">
-                    <i data-feather="help-circle" class="fea icon-ex-md text-indigo-600 mr-3"></i>
-                    <div class="flex-1">
-                        <h5 class="mb-2 text-xl font-semibold">
-                            How to make unlimited data entry ?
-                        </h5>
-                        <p class="text-slate-400">
-                            Furthermore, it is advantageous when the dummy text is
-                            relatively realistic so that the layout impression of the final
-                            publication is not compromised.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex">
-                    <i data-feather="help-circle" class="fea icon-ex-md text-indigo-600 mr-3"></i>
-                    <div class="flex-1">
-                        <h5 class="mb-2 text-xl font-semibold">
-                            Is <span class="text-indigo-600">Techwind</span> safer to use
-                            with my account ?
-                        </h5>
-                        <p class="text-slate-400">
-                            The most well-known dummy text is the 'Lorem Ipsum', which is
-                            said to have originated in the 16th century. Lorem Ipsum is
-                            composed in a pseudo-Latin language which more or less
-                            corresponds to 'proper' Latin.
-                        </p>
-                    </div>
-                </div>
             </div>
             <!--end grid-->
         </div>
@@ -537,7 +496,7 @@
                     Have Question ? Get in touch!
                 </h3>
 
-                <p class="text-slate-400 max-w-xl mx-auto">
+                <p class="text-slate-500 max-w-xl mx-auto">
                     Start working with Tailwind CSS that can provide everything you need
                     to generate awareness, drive traffic, connect.
                 </p>

@@ -1,37 +1,5 @@
 <x-guest-layout>
-    <!-- Start Hero -->
-    <section
-        class="relative table w-full py-36 bg-[url('../../assets/images/company/aboutus.jpg')] bg-center bg-no-repeat">
-        <div class="absolute inset-0 bg-black opacity-75"></div>
-        <div class="container">
-            <div class="grid grid-cols-1 pb-8 text-center mt-10">
-                <h3 class="md:text-4xl text-3xl md:leading-normal tracking-wide leading-normal font-medium text-white">
-                    Contact Us</h3>
-            </div>
-            <!--end grid-->
-        </div>
-        <!--end container-->
-
-        <div class="absolute text-center z-10 bottom-5 right-0 left-0 mx-3">
-            <ul class="breadcrumb tracking-[0.5px] breadcrumb-light mb-0 inline-block">
-                <li
-                    class="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white">
-                    <a href="index.html">Techwind</a></li>
-                <li class="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white"
-                    aria-current="page">Contact Us</li>
-            </ul>
-        </div>
-    </section>
-    <!--end section-->
-    <div class="relative">
-        <div
-            class="shape absolute right-0 sm:-bottom-px -bottom-[2px] left-0 overflow-hidden z-1 text-white dark:text-slate-900">
-            <svg class="w-full h-auto" viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
-            </svg>
-        </div>
-    </div>
-    <!-- End Hero -->
+    <x-frontend.breadcrumb title="Contact Us" />
 
     <!-- Start Section-->
     <section class="relative md:py-24 py-16">
@@ -45,13 +13,11 @@
 
                     <div class="content mt-7">
                         <h5 class="title h5 text-xl font-medium">Phone</h5>
-                        <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and
-                            benefit</p>
+                        <p class="text-slate-400 mt-3">General Enquires & Queries</p>
 
                         <div class="mt-5">
                             <a href="tel:+152534-468-854"
-                                class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">+152
-                                534-468-854</a>
+                                class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">+91-804-203-054</a>
                         </div>
                     </div>
                 </div>
@@ -64,12 +30,11 @@
 
                     <div class="content mt-7">
                         <h5 class="title h5 text-xl font-medium">Email</h5>
-                        <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and
-                            benefit</p>
+                        <p class="text-slate-400 mt-3">For Feedback, Complaint & More</p>
 
                         <div class="mt-5">
-                            <a href="mailto:contact@example.com"
-                                class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">contact@example.com</a>
+                            <a href="mailto:fmgebuddy@gmail.com"
+                                class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">fmgebuddy@gmail.com</a>
                         </div>
                     </div>
                 </div>
@@ -82,11 +47,11 @@
 
                     <div class="content mt-7">
                         <h5 class="title h5 text-xl font-medium">Location</h5>
-                        <p class="text-slate-400 mt-3">C/54 Northwest Freeway, Suite 558, <br> Houston, USA 485</p>
+                        <p class="text-slate-400 mt-3">No.2122/5, Opp. BWSSB Office D Block, Behind Adiga's
+                            Hotel, Sahakar Nagar, Bengaluru, Karnataka - 560092</p>
 
                         <div class="mt-5">
-                            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
-                                data-type="iframe"
+                            <a href="https://goo.gl/maps/KpVDhaMe4GF9oicu8" target="__blank"
                                 class="video-play-icon read-more lightbox btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">View
                                 on Google map</a>
                         </div>
@@ -176,8 +141,9 @@
         <div class="grid grid-cols-1">
             <div class="w-full leading-[0] border-0">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
-                    style="border:0" class="w-full h-[500px]" allowfullscreen></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.9144197548936!2d77.58678149255624!3d13.059161968994957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae18204498bbff%3A0x4da04d63f0291abb!2sBWSSB%20Sahakaranagar!5e0!3m2!1sen!2sin!4v1664167099273!5m2!1sen!2sin"
+                    style="border:0" class="w-full h-[500px]" allowfullscreen loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <!--end grid-->

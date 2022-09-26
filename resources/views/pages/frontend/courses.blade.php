@@ -1,38 +1,5 @@
 <x-guest-layout>
-    <!-- Start Hero -->
-    <section
-        class="relative table w-full py-36 lg:py-44 bg-[url('../../assets/images/course/cta.jpg')] bg-no-repeat bg-center">
-        <div class="absolute inset-0 bg-black opacity-75"></div>
-        <div class="container">
-            <div class="grid grid-cols-1 pb-8 text-center mt-10">
-                <h3 class="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">Courses</h3>
-                <h5 class="text-white/50 text-lg font-medium">Please see our latest educational courses</h5>
-            </div>
-            <!--end grid-->
-        </div>
-        <!--end container-->
-
-        <div class="absolute text-center z-10 bottom-5 right-0 left-0 mx-3">
-            <ul class="breadcrumb tracking-[0.5px] breadcrumb-light mb-0 inline-block">
-                <li
-                    class="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white">
-                    <a href="index-course.html">Techwind</a>
-                </li>
-                <li class="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white"
-                    aria-current="page">Courses</li>
-            </ul>
-        </div>
-    </section>
-    <!--end section-->
-    <div class="relative">
-        <div
-            class="shape absolute right-0 sm:-bottom-px -bottom-[2px] left-0 overflow-hidden z-1 text-white dark:text-slate-900">
-            <svg class="w-full h-auto" viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
-            </svg>
-        </div>
-    </div>
-    <!-- End Hero -->
+    <x-frontend.breadcrumb title="Courses" />
 
     <!-- Start Section-->
     <section class="relative md:py-24 py-16 overflow-hidden">
@@ -48,8 +15,7 @@
                             class="absolute inset-0 bg-slate-900/50 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                         </div>
 
-                        <div
-                            class="absolute left-0 bottom-0 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
+                        <div class="absolute left-0 bottom-0 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
                             <div class="pb-4 pl-4 flex items-center">
                                 <img src="assets/images/client/01.jpg"
                                     class="h-12 w-12 rounded-full shadow-md dark:shadow-gray-800 mx-auto"
@@ -188,8 +154,7 @@
                     </div>
 
                     <div class="content p-6 relative">
-                        <a href="{{ route('course_detail') }}"
-                            class="font-medium block text-indigo-600">Engineering</a>
+                        <a href="{{ route('course_detail') }}" class="font-medium block text-indigo-600">Engineering</a>
                         <a href="{{ route('course_detail') }}"
                             class="text-lg font-medium block hover:text-indigo-600 duration-500 ease-in-out mt-2">Microsoft
                             Excel - Excel from Beginner to Advanced</a>

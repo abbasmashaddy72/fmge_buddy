@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['middleware' => 'guest', 'namespace' => 'App\Http\Controllers\Frontend'], function () {
+Route::group(['namespace' => 'App\Http\Controllers\Frontend'], function () {
     Route::get('', 'HomeController@index')->name('home');
     Route::get('blogs', 'HomeController@blogs')->name('blogs');
     Route::get('blog_detail', 'HomeController@blog_detail')->name('blog_detail');

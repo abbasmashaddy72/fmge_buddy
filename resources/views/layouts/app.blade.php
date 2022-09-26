@@ -10,11 +10,6 @@
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/backend/app.css') }}">
-    <style>
-        [x-cloak] {
-            display: none !important;
-        }
-    </style>
     @stack('styles')
     @livewireStyles
 </head>
