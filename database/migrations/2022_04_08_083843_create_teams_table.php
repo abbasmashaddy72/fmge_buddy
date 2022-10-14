@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('qualification');
             $table->string('department');
             $table->text('about');
-            $table->date('experience');
+            $table->date('experience')->nullable();
             $table->timestamps();
         });
     }

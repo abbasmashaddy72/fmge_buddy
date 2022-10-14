@@ -56,13 +56,13 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth', 'na
     ]);
 
     Route::resource('team', 'TeamController')->only([
-        'index', 'create', 'store',  'edit'
+        'index', 'create', 'show', 'store',  'edit'
     ]);
 
     Route::post('image_upload', 'MiscellaneousController@image_upload')->name('ckeditor.upload');
 
     Route::resource('blog', 'BlogController')->only([
-        'index', 'create', 'store',  'edit'
+        'index', 'create', 'show', 'store',  'edit'
     ]);
 
     Route::resource('feature', 'FeatureController')->only([
