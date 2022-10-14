@@ -16,8 +16,8 @@
                         <p class="text-slate-400 mt-3">General Enquires & Queries</p>
 
                         <div class="mt-5">
-                            <a href="tel:+91-8042-053-054"
-                                class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">+91-8042-053-054</a>
+                            <a href="tel:{{ $contact_no }}"
+                                class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">{{ $contact_no }}</a>
                         </div>
                     </div>
                 </div>
@@ -33,8 +33,8 @@
                         <p class="text-slate-400 mt-3">For Feedback, Complaint & More</p>
 
                         <div class="mt-5">
-                            <a href="mailto:fmgebuddy@gmail.com"
-                                class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">fmgebuddy@gmail.com</a>
+                            <a href="mailto:{{ $email }}"
+                                class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">{{ $email }}</a>
                         </div>
                     </div>
                 </div>
@@ -47,11 +47,10 @@
 
                     <div class="content mt-7">
                         <h5 class="title h5 text-xl font-medium">Location</h5>
-                        <p class="text-slate-400 mt-3">No.2122/5, Opp. BWSSB Office D Block, Behind Adiga's
-                            Hotel, Sahakar Nagar, Bengaluru, Karnataka - 560092</p>
+                        <p class="text-slate-400 mt-3">{{ $address }}</p>
 
                         <div class="mt-5">
-                            <a href="https://goo.gl/maps/KpVDhaMe4GF9oicu8" target="__blank"
+                            <a href="{{ $redirect_map_link }}" target="__blank"
                                 class="video-play-icon read-more lightbox btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">View
                                 on Google map</a>
                         </div>
@@ -83,10 +82,8 @@
     <div class="container-fluid relative">
         <div class="grid grid-cols-1">
             <div class="w-full leading-[0] border-0">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.9144197548936!2d77.58678149255624!3d13.059161968994957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae18204498bbff%3A0x4da04d63f0291abb!2sBWSSB%20Sahakaranagar!5e0!3m2!1sen!2sin!4v1664167099273!5m2!1sen!2sin"
-                    style="border:0" class="w-full h-[500px]" allowfullscreen loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="{{ $embed_map_link }}" style="border:0" class="w-full h-[500px]" allowfullscreen
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <!--end grid-->

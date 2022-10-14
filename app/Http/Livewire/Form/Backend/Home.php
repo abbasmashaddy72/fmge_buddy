@@ -49,6 +49,7 @@ class Home extends Component
     public $youtube;
     public $google_business;
     public $embed_map_link;
+    public $redirect_map_link;
 
     public $logoLightIsUploaded = false;
     public $logoDarkIsUploaded = false;
@@ -95,6 +96,7 @@ class Home extends Component
         $this->youtube = Helper::get_static_option('youtube');
         $this->google_business = Helper::get_static_option('google_business');
         $this->embed_map_link = Helper::get_static_option('embed_map_link');
+        $this->redirect_map_link = Helper::get_static_option('redirect_map_link');
     }
 
     protected $rules = [
@@ -136,6 +138,7 @@ class Home extends Component
         'youtube' => '',
         'google_business' => '',
         'embed_map_link' => '',
+        'redirect_map_link' => '',
     ];
 
     public function updated($propertyName)

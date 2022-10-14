@@ -221,6 +221,10 @@
             <x-form-input name="embed_map_link"
                 label="Embed Map Link(Directly from Google Maps Search, Share, Embed copy src link & paste)"
                 type="text" />
+
+            <x-form-input name="redirect_map_link"
+                label="Redirect Map Link(Directly from Google Maps Search, Share, Send a Link copy link & paste)"
+                type="text" />
         @endwire
         <div class="mt-3">
             <x-backend.submit-button>

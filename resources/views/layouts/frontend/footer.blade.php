@@ -7,38 +7,34 @@
                     <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
                         <div class="lg:col-span-4 md:col-span-12">
                             <a href="#" class="text-[22px] focus:outline-none">
-                                <img src="{{ asset('assets/images/logo-light.png') }}" alt="">
+                                <img src="{{ asset('storage/' . $logo_light) }}" alt="">
                             </a>
                             <p class="mt-6 text-gray-300">Start working with Tailwind CSS that can provide everything
                                 you need to generate awareness, drive traffic, connect.</p>
                             <ul class="list-none mt-6">
-                                <li class="inline"><a href="https://1.envato.market/techwind" target="_blank"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-shopping-cart align-middle" title="Buy Now"></i></a></li>
-                                <li class="inline"><a href="https://dribbble.com/shreethemes" target="_blank"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-dribbble align-middle" title="dribbble"></i></a></li>
-                                <li class="inline"><a href="https://www.behance.net/shreethemes" target="_blank"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-behance" title="Behance"></i></a></li>
-                                <li class="inline"><a href="http://linkedin.com/company/shreethemes" target="_blank"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-linkedin" title="Linkedin"></i></a></li>
-                                <li class="inline"><a href="https://www.facebook.com/shreethemes" target="_blank"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-facebook-f align-middle" title="facebook"></i></a></li>
-                                <li class="inline"><a href="https://www.instagram.com/shreethemes/" target="_blank"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-instagram align-middle" title="instagram"></i></a></li>
-                                <li class="inline"><a href="https://twitter.com/shreethemes" target="_blank"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-twitter align-middle" title="twitter"></i></a></li>
-                                <li class="inline"><a href="mailto:support@shreethemes.in"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-envelope align-middle" title="email"></i></a></li>
-                                <li class="inline"><a href="https://forms.gle/QkTueCikDGqJnbky9" target="_blank"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-file align-middle" title="customization"></i></a></li>
+                                <li class="inline"><a href="{{ $linkedin }}" target="_blank"
+                                        class="text-xl btn btn-icon btn-lg border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                        <i class="uil uil-linkedin" title="Linkedin"></i></a></li>
+
+                                <li class="inline"><a href="{{ $facebook }}" target="_blank"
+                                        class="text-xl btn btn-icon btn-lg border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                        <i class="uil uil-facebook-f align-middle" title="facebook"></i></a></li>
+
+                                <li class="inline"><a href="{{ $instagram }}" target="_blank"
+                                        class="text-xl btn btn-icon btn-lg border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                        <i class="uil uil-instagram align-middle" title="instagram"></i></a></li>
+
+                                <li class="inline"><a href="{{ $twitter }}" target="_blank"
+                                        class="text-xl btn btn-icon btn-lg border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                        <i class="uil uil-twitter align-middle" title="twitter"></i></a></li>
+
+                                <li class="inline"><a href="{{ $youtube }}"
+                                        class="text-xl btn btn-icon btn-lg border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                        <i class="uil uil-youtube align-middle" title="youtube"></i></a></li>
+
+                                <li class="inline"><a href="{{ $google_business }}"
+                                        class="text-xl btn btn-icon btn-lg border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                        <i class="uil uil-google align-middle" title="google"></i></a></li>
                             </ul>
                             <!--end icon-->
                         </div>
@@ -96,7 +92,7 @@
 
                         <div class="lg:col-span-3 md:col-span-4">
                             <h5 class="tracking-[1px] text-gray-100 font-semibold">Newsletter</h5>
-                            <p class="mt-6">Sign up and receive the latest tips via email.</p>
+                            <p class="mt-6">Sign up and receive the Updates via email.</p>
                             <form>
                                 <div class="grid grid-cols-1">
                                     <div class="foot-subscribe my-3">

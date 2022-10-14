@@ -4,15 +4,14 @@
         <!-- Logo container-->
         <a class="logo pl-0" href="{{ route('home') }}">
             @if (Route::currentRouteName() == 'home')
-                <img src="{{ asset('assets/images/logo-dark.png') }}" class="inline-block dark:hidden" alt="" />
-                <img src="{{ asset('assets/images/logo-light.png') }}" class="hidden dark:inline-block" alt="" />
+                <img src="{{ asset('storage/' . $logo_dark) }}" class="inline-block dark:hidden" alt="" />
+                <img src="{{ asset('storage/' . $logo_light) }}" class="hidden dark:inline-block" alt="" />
             @else
                 <span class="inline-block dark:hidden">
-                    <img src="{{ asset('assets/images/logo-dark.png') }}" class="l-dark" height="24" alt="">
-                    <img src="{{ asset('assets/images/logo-light.png') }}" class="l-light" height="24"
-                        alt="">
+                    <img src="{{ asset('storage/' . $logo_dark) }}" class="l-dark" height="24" alt="">
+                    <img src="{{ asset('storage/' . $logo_light) }}" class="l-light" height="24" alt="">
                 </span>
-                <img src="{{ asset('assets/images/logo-light.png') }}" height="24" class="hidden dark:inline-block"
+                <img src="{{ asset('storage/' . $logo_light) }}" height="24" class="hidden dark:inline-block"
                     alt="">
             @endif
         </a>
