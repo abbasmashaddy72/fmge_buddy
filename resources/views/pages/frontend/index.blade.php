@@ -476,62 +476,7 @@
                     to generate awareness, drive traffic, connect.
                 </p>
 
-                <div class="mt-6">
-                    <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
-                        <p class="mb-0" id="error-msg"></p>
-                        <div id="simple-msg"></div>
-                        <div class="grid lg:grid-cols-12 lg:gap-6">
-                            <div class="lg:col-span-6 mb-5">
-                                <div class="text-left">
-                                    <label for="name" class="font-semibold">Your Name:</label>
-                                    <div class="form-icon relative mt-2">
-                                        <i data-feather="user" class="w-4 h-4 absolute top-3 left-4"></i>
-                                        <input name="name" id="name" type="text" class="form-input pl-11"
-                                            placeholder="Name :" />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="lg:col-span-6 mb-5">
-                                <div class="text-left">
-                                    <label for="email" class="font-semibold">Your Email:</label>
-                                    <div class="form-icon relative mt-2">
-                                        <i data-feather="mail" class="w-4 h-4 absolute top-3 left-4"></i>
-                                        <input name="email" id="email" type="email" class="form-input pl-11"
-                                            placeholder="Email :" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-1">
-                            <div class="mb-5">
-                                <div class="text-left">
-                                    <label for="subject" class="font-semibold">Your Question:</label>
-                                    <div class="form-icon relative mt-2">
-                                        <i data-feather="book" class="w-4 h-4 absolute top-3 left-4"></i>
-                                        <input name="subject" id="subject" class="form-input pl-11"
-                                            placeholder="Subject :" />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mb-5">
-                                <div class="text-left">
-                                    <label for="comments" class="font-semibold">Your Comment:</label>
-                                    <div class="form-icon relative mt-2">
-                                        <i data-feather="message-circle" class="w-4 h-4 absolute top-3 left-4"></i>
-                                        <textarea name="comments" id="comments" class="form-input pl-11 h-28" placeholder="Message :"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="submit" id="submit" name="send"
-                            class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md justify-center flex items-center">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
+                @livewire('form.frontend.contact-us')
             </div>
             <!--end grid-->
         </div>

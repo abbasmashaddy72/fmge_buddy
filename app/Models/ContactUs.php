@@ -13,7 +13,7 @@ class ContactUs extends Model
         'name',
         'email',
         'contact_number',
-        'address',
-        'questions',
+        'question',
+        'message',
     ];
 }

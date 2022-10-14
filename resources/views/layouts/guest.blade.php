@@ -21,7 +21,7 @@
     <link href="{{ asset('assets/libs/@iconscout/unicons/css/line.css') }}" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('assets/css/icons.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/tailwind.css') }}" />
-
+    @stack('styles')
 </head>
 
 <body class="font-nunito text-base text-black dark:text-white dark:bg-slate-900">

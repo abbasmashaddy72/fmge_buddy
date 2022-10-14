@@ -42,15 +42,15 @@ class ContactUsTable extends LivewireDatatable
                 ->label('Contact Number')
                 ->filterable(),
 
-            Column::name('address')
+            Column::name('question')
                 ->searchable()
                 ->truncate(20)
-                ->label('Address'),
+                ->label('Question'),
 
-            Column::name('questions')
+            Column::name('message')
                 ->searchable()
                 ->truncate(20)
-                ->label('Questions'),
+                ->label('Message'),
         ];
     }
 }
