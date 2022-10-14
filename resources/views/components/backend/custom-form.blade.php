@@ -1,17 +1,19 @@
 <div class="w-full pb-8">
     <div class="flex flex-col overflow-hidden bg-white rounded-lg shadow-lg ">
-        <div class="flex flex-wrap justify-between p-6 pb-0">
-            <div class="header-title">
-                <h4 class="mb-2 text-2xl font-medium card-title" wire:ignore>
-                    @if (substr(strstr(Route::currentRouteAction(), '@'), 1) == 'create')
-                        {{ __('Create') }} {{ $title }}
-                    @elseif(substr(strstr(Route::currentRouteAction(), '@'), 1) == 'edit')
-                        {{ __('Edit') }} {{ $title }}
-                    @else
-                        {{ __('Show') }} {{ $title }}
-                    @endif
-                </h4>
-            </div>
+        <div class="flex flex-wrap justify-between @if (!empty($title)) p-6 @endif pb-0">
+            @if (!empty($title))
+                <div class="header-title">
+                    <h4 class="mb-2 text-2xl font-medium card-title" wire:ignore>
+                        @if (substr(strstr(Route::currentRouteAction(), '@'), 1) == 'create')
+                            {{ __('Create') }} {{ $title }}
+                        @elseif(substr(strstr(Route::currentRouteAction(), '@'), 1) == 'edit')
+                            {{ __('Edit') }} {{ $title }}
+                        @else
+                            {{ __('Show') }} {{ $title }}
+                        @endif
+                    </h4>
+                </div>
+            @endif
             @if (!empty($back))
                 <div class="card-action">
                     <x-backend.a-button href="{{ url()->previous() }}">Back</x-backend.a-button>
