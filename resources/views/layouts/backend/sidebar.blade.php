@@ -145,7 +145,7 @@
             </x-backend.side-link>
 
             <x-backend.side-link :href="route('admin.unisharp.lfm.show')" target="_blank" :active="request()->routeIs('admin.unisharp.lfm.show*')">
-                <x-slot name="nav_title">{{ __('File Manager') }}<img width="20" class="inline-block"
+                <x-slot name="nav_title">{{ __('Gallery') }}<img width="20" class="inline-block"
                         src={{ asset('images/svg/target_blank.svg') }} /></x-slot>
                 <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.4"
