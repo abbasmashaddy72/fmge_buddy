@@ -20,6 +20,7 @@ class Home extends Component
     public $welcome_message;
     public $tag_line;
     public $tag_by;
+    public $hero_image;
     public $about_title;
     public $about_message;
     public $about_title_1;
@@ -53,6 +54,7 @@ class Home extends Component
 
     public $logoLightIsUploaded = false;
     public $logoDarkIsUploaded = false;
+    public $HeroImageIsUploaded = false;
     public $About1ImageIsUploaded = false;
     public $About2ImageIsUploaded = false;
 
@@ -67,6 +69,7 @@ class Home extends Component
         $this->welcome_message = Helper::get_static_option('welcome_message');
         $this->tag_line = Helper::get_static_option('tag_line');
         $this->tag_by = Helper::get_static_option('tag_by');
+        $this->hero_image = Helper::get_static_option('hero_image');
         $this->about_title = Helper::get_static_option('about_title');
         $this->about_message = Helper::get_static_option('about_message');
         $this->about_title_1 = Helper::get_static_option('about_title_1');
@@ -109,6 +112,7 @@ class Home extends Component
         'welcome_message' => '',
         'tag_line' => '',
         'tag_by' => '',
+        'hero_image' => '',
         'about_title' => '',
         'about_message' => '',
         'about_title_1' => '',
@@ -151,6 +155,9 @@ class Home extends Component
         if (gettype($this->logo_dark) != 'string') {
             $this->logoDarkIsUploaded = true;
         }
+        if (gettype($this->hero_image) != 'string') {
+            $this->HeroImageIsUploaded = true;
+        }
         if (gettype($this->about_1_image) != 'string') {
             $this->About1ImageIsUploaded = true;
         }
@@ -179,6 +186,11 @@ class Home extends Component
             } elseif (gettype($this->logo_dark) != 'string') {
                 $image = $this->logo_dark->store('homepage', 'public');
                 Helper::set_static_option('logo_dark', $image);
+            }
+            if ($this->hero_image == null) {
+            } elseif (gettype($this->hero_image) != 'string') {
+                $image = $this->hero_image->store('homepage', 'public');
+                Helper::set_static_option('hero_image', $image);
             }
             if ($this->about_1_image == null) {
             } elseif (gettype($this->about_1_image) != 'string') {

@@ -3,9 +3,13 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Blog;
 use App\Models\Faq;
+use App\Models\Team;
 use App\Services\Helper;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
 {
@@ -36,6 +40,7 @@ class HomeController extends Controller
         $welcome_message = Helper::get_static_option('welcome_message');
         $tag_line = Helper::get_static_option('tag_line');
         $tag_by = Helper::get_static_option('tag_by');
+        $hero_image = Helper::get_static_option('hero_image');
         $about_title = Helper::get_static_option('about_title');
         $about_message = Helper::get_static_option('about_message');
         $about_title_1 = Helper::get_static_option('about_title_1');
@@ -59,12 +64,14 @@ class HomeController extends Controller
         $contact_us_title = Helper::get_static_option('contact_us_title');
         $contact_us_message = Helper::get_static_option('contact_us_message');
         $faqs = Faq::get()->take(4);
+        $teams = Team::get();
 
         return view('pages.frontend.index', compact([
             'welcome_title',
             'welcome_message',
             'tag_line',
             'tag_by',
+            'hero_image',
             'about_title',
             'about_message',
             'about_title_1',
@@ -87,7 +94,8 @@ class HomeController extends Controller
             'subscription_points_2',
             'contact_us_title',
             'contact_us_message',
-            'faqs'
+            'faqs',
+            'teams'
         ]));
     }
 
@@ -96,9 +104,11 @@ class HomeController extends Controller
         return view('pages.frontend.blogs');
     }
 
-    public function blog_detail()
+    public function blog_detail($id)
     {
-        return view('pages.frontend.blog_detail');
+        $blog = Blog::findOrFail($id);
+
+        return view('pages.frontend.blog_detail', compact('blog'));
     }
 
     public function courses()
@@ -130,6 +140,16 @@ class HomeController extends Controller
 
     public function gallery()
     {
-        return view('pages.frontend.gallery');
+        $dir = Storage::disk('public')->directories('files');
+
+        for ($i = 0; $i < count($dir); $i++) {
+            $directories[$i] = Storage::disk('public')->directories($dir[$i]);
+        }
+
+        $directories = array_filter($directories);
+        $directories = Arr::flatten($directories);
+        sort($directories);
+
+        return view('pages.frontend.gallery', compact('directories'));
     }
 }

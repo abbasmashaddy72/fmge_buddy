@@ -27,7 +27,7 @@
                 <!--end col-->
 
                 <div class="md:col-span-5">
-                    <img src="{{ asset('assets/images/illustrator/Startup_SVG.svg') }}" alt="" />
+                    <img src="{{ asset('storage/' . $hero_image) }}" alt="" />
                 </div>
                 <!--end col-->
             </div>
@@ -129,126 +129,25 @@
 
             <div class="grid relative grid-cols-1 mt-8">
                 <div class="tiny-two-item">
-                    <div class="tiny-slide">
-                        <div
-                            class="lg:flex p-6 lg:p-0 relative rounded-md shadow dark:shadow-gray-800 overflow-hidden m-2">
-                            <img class="w-24 h-24 lg:w-48 lg:h-auto lg:rounded-none rounded-full mx-auto"
-                                src="{{ asset('assets/images/client/01.jpg') }}" alt="" width="384"
-                                height="512" />
-                            <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
-                                <p class="text-base text-slate-500">
-                                    " It seems that only fragments of the original text remain
-                                    in the Lorem Ipsum texts used today. "
-                                </p>
+                    @foreach ($teams as $item)
+                        <div class="tiny-slide">
+                            <div
+                                class="lg:flex p-6 lg:p-0 relative rounded-md shadow dark:shadow-gray-800 overflow-hidden m-2">
+                                <img class="w-24 h-24 lg:w-48 lg:h-auto lg:rounded-none rounded-full mx-auto"
+                                    src="{{ asset('storage/' . $item->image) }}" alt="" width="384"
+                                    height="512" />
+                                <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
+                                    <p class="text-base text-slate-500">{{ $item->qualification }}</p>
 
-                                <div>
-                                    <span class="text-indigo-600 block mb-1">Thomas Israel</span>
-                                    <span class="text-slate-500 text-sm dark:text-white/60 block">Staff Engineer,
-                                        Algolia</span>
+                                    <div>
+                                        <span class="text-indigo-600 block mb-1">{{ $item->name }}</span>
+                                        <span
+                                            class="text-slate-500 text-sm dark:text-white/60 block">{{ $item->department }}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tiny-slide">
-                        <div
-                            class="lg:flex p-6 lg:p-0 relative rounded-md shadow dark:shadow-gray-800 overflow-hidden m-2">
-                            <img class="w-24 h-24 lg:w-48 lg:h-auto lg:rounded-none rounded-full mx-auto"
-                                src="{{ asset('assets/images/client/02.jpg') }}" alt="" width="384"
-                                height="512" />
-                            <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
-                                <p class="text-base text-slate-500">
-                                    " The most well-known dummy text is the 'Lorem Ipsum', which
-                                    is said to have originated in the 16th century. "
-                                </p>
-
-                                <div>
-                                    <span class="text-indigo-600 block mb-1">Carl Oliver</span>
-                                    <span class="text-slate-500 text-sm dark:text-white/60 block">Staff Engineer,
-                                        Algolia</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tiny-slide">
-                        <div
-                            class="lg:flex p-6 lg:p-0 relative rounded-md shadow dark:shadow-gray-800 overflow-hidden m-2">
-                            <img class="w-24 h-24 lg:w-48 lg:h-auto lg:rounded-none rounded-full mx-auto"
-                                src="{{ asset('assets/images/client/03.jpg') }}" alt="" width="384"
-                                height="512" />
-                            <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
-                                <p class="text-base text-slate-500">
-                                    " One disadvantage of Lorum Ipsum is that in Latin certain
-                                    letters appear more frequently than others. "
-                                </p>
-
-                                <div>
-                                    <span class="text-indigo-600 block mb-1">Barbara McIntosh</span>
-                                    <span class="text-slate-500 text-sm dark:text-white/60 block">Staff Engineer,
-                                        Algolia</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tiny-slide">
-                        <div
-                            class="lg:flex p-6 lg:p-0 relative rounded-md shadow dark:shadow-gray-800 overflow-hidden m-2">
-                            <img class="w-24 h-24 lg:w-48 lg:h-auto lg:rounded-none rounded-full mx-auto"
-                                src="{{ asset('assets/images/client/04.jpg') }}" alt="" width="384"
-                                height="512" />
-                            <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
-                                <p class="text-base text-slate-500">
-                                    " Thus, Lorem Ipsum has only limited suitability as a visual
-                                    filler for German texts. "
-                                </p>
-
-                                <div>
-                                    <span class="text-indigo-600 block mb-1">Jill Webb</span>
-                                    <span class="text-slate-500 text-sm dark:text-white/60 block">Staff Engineer,
-                                        Algolia</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tiny-slide">
-                        <div
-                            class="lg:flex p-6 lg:p-0 relative rounded-md shadow dark:shadow-gray-800 overflow-hidden m-2">
-                            <img class="w-24 h-24 lg:w-48 lg:h-auto lg:rounded-none rounded-full mx-auto"
-                                src="{{ asset('assets/images/client/05.jpg') }}" alt="" width="384"
-                                height="512" />
-                            <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
-                                <p class="text-base text-slate-500">
-                                    " One disadvantage of Lorum Ipsum is that in Latin certain
-                                    letters appear more frequently than others. "
-                                </p>
-
-                                <div>
-                                    <span class="text-indigo-600 block mb-1">Barbara McIntosh</span>
-                                    <span class="text-slate-500 text-sm dark:text-white/60 block">Staff Engineer,
-                                        Algolia</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tiny-slide">
-                        <div
-                            class="lg:flex p-6 lg:p-0 relative rounded-md shadow dark:shadow-gray-800 overflow-hidden m-2">
-                            <img class="w-24 h-24 lg:w-48 lg:h-auto lg:rounded-none rounded-full mx-auto"
-                                src="{{ asset('assets/images/client/06.jpg') }}" alt="" width="384"
-                                height="512" />
-                            <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
-                                <p class="text-base text-slate-500">
-                                    " Thus, Lorem Ipsum has only limited suitability as a visual
-                                    filler for German texts. "
-                                </p>
-
-                                <div>
-                                    <span class="text-indigo-600 block mb-1">Jill Webb</span>
-                                    <span class="text-slate-500 text-sm dark:text-white/60 block">Staff Engineer,
-                                        Algolia</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
             <!--end grid-->
@@ -297,7 +196,7 @@
                                             </li>
                                         @endforeach
                                     </ul>
-                                    <a href=""
+                                    <a href="{{ route('contact_us') }}"
                                         class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-5">Get
                                         Started</a>
                                 </div>
@@ -321,7 +220,7 @@
                                             </li>
                                         @endforeach
                                     </ul>
-                                    <a href=""
+                                    <a href="{{ route('contact_us') }}"
                                         class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-5">Try
                                         it Now</a>
                                 </div>

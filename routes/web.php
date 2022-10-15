@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::group(['namespace' => 'App\Http\Controllers\Frontend'], function () {
     Route::get('', 'HomeController@index')->name('home');
     Route::get('blogs', 'HomeController@blogs')->name('blogs');
-    Route::get('blog_detail', 'HomeController@blog_detail')->name('blog_detail');
+    Route::get('blog_detail/{id}', 'HomeController@blog_detail')->name('blog_detail');
     Route::get('courses', 'HomeController@courses')->name('courses');
     Route::get('course_detail', 'HomeController@course_detail')->name('course_detail');
     Route::get('contact_us', 'HomeController@contact_us')->name('contact_us');

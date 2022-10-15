@@ -74,6 +74,31 @@
 
             <x-form-input name="tag_by" label="Tag By" type="text" />
 
+            {{-- Hero Image Start --}}
+            @if ($this->hero_image)
+                <div class="my-4">
+                    <div class="mb-2">
+                        <label class="block">
+                            <x-form-label label="Uploaded Hero Image Preview" />
+                            <img src="{{ $this->HeroImageIsUploaded ? $this->hero_image->temporaryUrl() : url('storage/' . $this->hero_image) }}"
+                                class="mt-2" width="250" height="300">
+                        </label>
+                    </div>
+                </div>
+            @endif
+
+            <div class="my-4">
+                <div class="mb-2">
+                    <label class="block">
+                        <x-form-label label="Hero Image" />
+                        <input type="file" accept="image/*" wire:model="hero_image"
+                            class="block w-full mt-2 text-xl font-normal text-gray-500 border rounded outline-none focus:border-blue-400 focus:shadow">
+                    </label>
+                </div>
+                <x-form-errors name="hero_image" />
+            </div>
+            {{-- Hero Image end --}}
+
             <h4 class="my-4 text-2xl font-medium card-title" wire:ignore>
                 {{ __('About Us Section') }}
             </h4>
